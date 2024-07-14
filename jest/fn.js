@@ -17,6 +17,34 @@ const fn = {
       }, 3000);
     });
   },
+  connectUserDB: () => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve({ name: "Mike", age: 30, gender: "male" });
+      }, 500);
+    });
+  },
+  disConnectUserDB: () => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve();
+      }, 500);
+    });
+  },
+  connectCarDB: () => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve({ brand: "bmw", model: "z4", color: "black" });
+      }, 500);
+    });
+  },
+  disConnectCarDB: () => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve();
+      }, 500);
+    });
+  },
 };
 
 module.exports = fn;

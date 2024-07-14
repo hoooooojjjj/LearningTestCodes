@@ -70,7 +70,7 @@ test("0.1 더하기 0.2는 0.3과 가까워야 한다", () => {
   expect(fn.add(0.1, 0.2)).toBeCloseTo(0.3);
 });
 
-// toMatch : 문자열을 비교할 때 사용
+// toMatch : 정규표현식을 통해 문자열을 비교할 때 사용
 
 test("Hello World에 e라는 글자가 있나?", () => {
   expect("Hello World").toMatch(/e/);
